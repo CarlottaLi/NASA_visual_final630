@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NASA Precipitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-0 z-50 w-full text-gray-200 bg-gray-900 border-2 border-gray-900 md:sticky border-b-stone-200/10">
+        <div x-data="{ open: false }"
+            class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="flex flex-row items-center justify-between p-4">
+                <a class="flex text-gray-100 transition duration-1000 ease-in-out group">
+                    <div
+                        class="mt-1 ml-3 text-xl font-black tracking-tight text-gray-100 uppercase transition-colors group-hover:text-gray-400/60">
+                        NASA
+                    </div>
+                </a>
+            </div>
+            <!-- <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                <a
+                    class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover: text-white focus:text-white hover:bg-indigo-600 focus:bg-indigo-700 focus:outline-none focus:shadow-outline">
+                    About
+                </a>
+            </nav> -->
+        </div>
+    </div>
+    <div class="bg-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto">
+            <h1
+                class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl xl:text-6xl dark-text-white">
+                Global Precipitation Change
+            </h1>
+            <a class="font-light text-gray-800 dark:text-gray-300">
+                The Global Precipitation Measurement (GPM) mission is an international network of satellites that provide next-generation global observations of rain and snow. Building upon the success of the Tropical Rainfall Measuring Mission (TRMM), the GPM concept centers on the deployment of a “Core Observatory” satellite carrying an advanced radar / radiometer system to measure precipitation from space and serve as a reference standard to unify precipitation measurements from a constellation of research and operational satellites. Details can see at <a href="https://gpm.nasa.gov/missions/GPM">https://gpm.nasa.gov/missions/GPM</a>.
+            </a>
+        </div>
+    </div>
+</body>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="src/index.js"></script>
+<script src="https://unpkg.com/topojson@3"></script>
+
+</html>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>        
+<script src="http://d3js.org/topojson.v0.min.js"></script>
+<script src="vis.js"> </script>
+</html>
